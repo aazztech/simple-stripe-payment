@@ -1,0 +1,126 @@
+/* -----------------------------
+  Reset
+----------------------------- */
+body {
+  background-color: #f2f2f2;
+}
+
+/* -----------------------------
+  Module
+----------------------------- */
+.section {
+  padding: 50px 0;
+}
+
+.section-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.page-section {
+  background: #fff;
+}
+
+
+
+/* package-box */
+.package-box {
+  margin: 20px 0;
+  box-shadow: 0 0 5px #ccc;
+  background-color: #fff;
+}
+
+.package-box.recommended .package-header {
+  border-bottom: 1px solid #007BFF;
+  background-color: #007BFF;
+}
+
+.package-box.recommended .package-title {
+  color: #fff;
+}
+
+.package-box.recommended .package-price {
+  color: #fff;
+}
+
+.package-box .package-header {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.package-box .package-title {
+  font-weight: 700;
+}
+.package-box .package-price {
+  color: #656565;
+  margin-bottom: 0;
+}
+.package-box .package-body {
+  padding: 20px;
+}
+
+.package-box .package-footer {
+  padding: 20px;
+  text-align: center;
+}
+
+ul.feature-list {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+ul.feature-list li {
+  list-style: none;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 15px 0;
+}
+
+
+
+
+
+.success-card {
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  box-shadow: 0 0 5px #ccc;
+  background-color: #fff;
+  transition: all ease-in-out 300ms;
+  animation: popUp ease-in-out 500ms;
+}
+.success-card .card-icon {
+  min-width: 50px;
+  min-height: 50px;
+  background-color: var(--green);
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.success-card .card-text {}
+
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* -----------------------------
+  Layout
+----------------------------- */
