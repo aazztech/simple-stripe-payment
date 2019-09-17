@@ -1,5 +1,5 @@
 <?php 
-  if ( isset( $_GET['package'] ) && isset( $_GET['price'] )  ) {
+  if ( isset( $_GET['package'] ) && isset( $_GET['price'] )  ) :
     require_once('class/lib/stripe-php/init.php');
     \Stripe\Stripe::setApiKey('sk_test_ThtWdQUcALTiuiWJtRRORL3J');
 
@@ -9,11 +9,11 @@
       'currency' => 'usd',
     ]);
 ?>
-<div class="section">
+<div class="section vh-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 offset-md-4">
-        <form action="#" id="payment-form">
+      <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
+        <form action="#" id="payment-form" class="light-form">
           <div class="receipt text-center">
             <h4><?php echo $_GET['package']; ?></h4>
             <p><?php echo $_GET['price']; ?> USD</p>
@@ -34,7 +34,7 @@
               Pay Now
             </button>
 
-            <div class="alert alert-danger my-4 card-response d-none"></div>
+            <div class="alert alert-danger mt-3 card-response d-none"></div>
           </div>
         </form>
 
@@ -46,8 +46,8 @@
     </div>
   </div>
 </div>
-<?php } else { ?>
-<div class="section">
+<?php else : ?>
+<div class="section vh-section">
   <div class="container">
     <div class="section-header">
       <h2>Chose a Package</h2>
@@ -127,4 +127,4 @@
     </div>
   </div>
 </div>
-<?php } ?>
+<?php endif; ?>

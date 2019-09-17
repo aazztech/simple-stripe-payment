@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Stripe Payment App</title>
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="./assets/css/stripe.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
