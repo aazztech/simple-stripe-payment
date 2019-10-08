@@ -15,6 +15,7 @@
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="https://js.stripe.com/v3/"></script>
+  <script src="./assets/js/dist/new-app.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>
 </html>
